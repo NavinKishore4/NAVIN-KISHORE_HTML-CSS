@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="labtest.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="formentry">
+            <form action="">
+                <h1>1. Your Contact Details</h1>
+                <input type="text" name="fullname" class="form-box" placeholder="Full Name">
+                <input type="text" name="patientid" class="form-box" placeholder="Patient Id if exists">
+                <input type="text" name="cnum" class="form-box" placeholder="Contact Number">
+                <input type="email" name="email" class="form-box" placeholder="Email Id">
+                <h1>2.Address</h1>
+                <input type="text" name="h-no" class="form-box" placeholder="H-No">
+                <input type="text" name="street" class="form-box" placeholder="Street">
+                <input type="text" name="area" class="form-box" placeholder="Area">
+                <h4>District</h4>
+                <select name="district" id="district">
+                    <option selected>Choose</option>
+                    <option>Chennai</option>
+                    <option>Thanjavur</option>
+                    <option>Madurai</option>
+                    <option>Trichy</option>
+                    <option>Erode</option>
+                </select>
+                <h1>3.Choose the Test Type</h1>
+                (Check at least one box without fail)
+                <br>
+                <input type="checkbox" name="Test">CBC
+                <br>
+                <input type="checkbox" name="Test">Complete Urine
+                <br>
+                <input type="checkbox" name="Test">Lipid Profile
+                <br>
+                <input type="checkbox" name="Test">Thyroid Stimulating Hormone(TSH)
+                <br>
+                <input type="checkbox" name="Test">Glucose Test
+
+                <h1>4.Do you want a hard copy of the report also?</h1>
+                <input type="radio" name="hard">Yes
+                <input type="radio" name="hard">No
+
+                <h1>5.Select Your Comfortable Date and Time</h1>
+                <input type="date">
+                <br>
+                <input type="time">
+        </div>
+        <div class="img">
+            <img src="/Media/Lab-Test/lab-test.jpg" class="" height="541px" width="510px" alt="" />
+        </div>
+        <div class="button">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>

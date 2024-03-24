@@ -1,0 +1,192 @@
+.main-div {
+  display: inline-block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.top header {
+  background-color: #444444;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.top {
+  width: 100vw;
+  display: inline-block;
+  position: sticky;
+  top: 0;
+}
+
+.top nav {
+  background-color: grey;
+  padding: 5px;
+  width: 100vw;
+}
+
+nav
+{
+  position: fixed;
+}
+
+nav a {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+  text-align: left;
+}
+
+.top nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.top a:hover {
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  max-width: 120px;
+}
+
+.dropdown-content a:hover {
+  background-color: #444444;
+  color: white;
+  width: 100vw;
+  height: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.animation {
+  margin-top: 50px;
+  height: 50vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  animation-name: animate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 5s;
+  border: 2px solid steelblue;
+  animation: animate 30s infinite;
+
+}
+
+@keyframes animate {
+  0% {
+      background-image: url(/Media/Animation/ani2.jpg);
+  }
+
+  20% {
+      background-image: url(/Media/Animation/ani3.jpg);
+  }
+
+  40% {
+      background-image: url(/Media/Animation/ani4.jpg);
+  }
+
+  60% {
+      background-image: url(/Media/Animation/ani5.jpg);
+  }
+  80%
+  {
+    background-image: url(/Media/Animation/ani1.jpg);
+  }
+  100%
+  {
+    background-image: url(/Media/Animation/ani4.jpg);
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px auto auto;
+}
+
+.kits {
+  background-color: #f0f1ea;
+  margin: 0px 10px;
+  border: #eef0e7 1px solid;
+  border-radius: 10px;
+}
+
+.contianer {
+  width: 100%;
+  padding: 10px 10px 70px 10px;
+}
+
+.kits .content {
+  padding: 10px;
+}
+
+.kits .content h3 {
+  font-weight: 200;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.kits .content p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.kits .content a {
+  background-color: white;
+  color: blue ;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: black 1px solid;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.kits .content a:hover {
+  color: rgb(0, 255, 76);
+  border: rgb(250, 234, 230) solid 1px;
+}
+
+.kits img {
+  width: 100%;
+  height: 100px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
